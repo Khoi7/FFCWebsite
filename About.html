@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMIT Flag Football Club Homepage</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .aboutText {
+            margin: 10px 15%; 
+            font-size: 24px; 
+            font-family: sourceSansPro; 
+            font-weight: 800; 
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="navContainer">
+        <ul class="navList">
+            <li class="navItems" style="margin-right: 20px;">
+                <a href="Homepage.html" class="logo">
+                    <img src="images/logo.png" id="logo">
+                </a>
+            </li>
+            <li class="navItems">
+                <div class="linkContainer">
+                    <a href="Players.html" class="navContent">PLAYERS</a>
+                </div>
+            </li>
+            <li class="navItems" id="highlights">
+                <div class="linkContainer">
+                    <a href="javascript:void(0)" class="navContent">HIGHLIGHTS</a>
+                </div>
+                <div class="dropdown" id="highlightsDropDown">
+                    <a href="Photos.html" class="dropdownContent">Photos</a>
+                    <a href="Videos.html" class="dropdownContent">Videos</a>
+                </div>
+            </li>
+            <li class="navItems" id="social">
+                <div class="linkContainer">
+                    <a href="javascript:void(0)" class="navContent">SOCIAL</a>
+                </div>
+                <div class="dropdown" id="socialDropDown">
+                    <a href="https://www.facebook.com/RMITVNSGSFlagFootballClub/" target="_blank" class="dropdownContent">Facebook</a>
+                    <a href="https://www.instagram.com/rmitvnflagfootball/" target="_blank" class="dropdownContent">Instagram</a>
+                </div>
+            </li>
+            <li class="navItems">
+                <div class="linkContainer" style="border-bottom: 4px solid #ffd1bd;">
+                    <a href="About.html" class="navContent">ABOUT US</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- MAIN -->
+    <div style="margin-top: 30px;">
+        <div class="caption">
+            ABOUT FLAG FOOTBALL
+        </div>
+        <div style="text-align: center;">
+            <img src="images/about1.jpg" style="width: 60%;">
+        </div>
+        <div class="aboutText">
+            Flag football is another version (non-contact) of American football which is very well-known in the USA, Canada and many countries.
+            For flag football, instead of tackling like original American football, players can just stop the opponent by taking a flag on their belt. 
+            In recent years, flag football has become more and more popular in Asia.
+        </div>
+        <div class="caption" style="margin-top: 50px;">
+            RMIT VIETNAM FLAG FOOTBALL CLUB
+        </div>
+        <div style="text-align: center;">
+            <img src="images/logo(1).png" height="400px">
+        </div>
+        <div class="aboutText">
+            RMIT Vietnam Flag Football Club was established in 2012 and was known as the first flag football community in Vietnam. Since then, RMIT Flag Football Club has participated in many international tournaments. 
+            Therefore, the reputation has been increased year by year. The organization always creates chances for players to compete in international environment.
+            Joining Flag Football Club, you will learn various skills, from fitness type like running and strength training, to mind type like team work and harmony.
+            We featured Teamwork as a key element to maintain our spirit and existence. 
+        </div>
+        <div style="text-align: center; margin-bottom: 20px;">
+            <img src="images/indoorend.jpg" height="350">
+            <img src="images/autumnend.jpg" height="350" >
+        </div>
+        <div class="aboutText">
+            RMIT Vietnam Flag Football Club has annual tournaments that has been happening for many years and has become a tradition of the club. 
+            Every year, we have Internal Cup which usually happens in April. This is a tournament for teams of our club members to compete and evaluate our skill. 
+            Then in June or July, we have Autumn Cup, the most important tournament in a year, where not only internal teams compete but also teams from other countries coming for the competition.
+            At Christmas time, there is Indoor Championship. This tournament mostly focuses on getting people to see the sport and also creating a chance for newbies to have their first experience of a flag football tournament.
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="messageUsContainer">
+            <button id="messageHeader" onclick="displayForm()"><h1 style="display: block; font-family: montserrat; font-weight: 700;">MESSAGE US</h1></button>
+            <form action="" id="messageUsForm" style="display: none;">
+                <div><input type="text" name="name" placeholder="Name" required></div>
+                <div><input type="email" name="email" placeholder="Email" required></div>
+                <div><input type="text" name="subject" placeholder="Subject" required></div>
+                <div><textarea name="message" id="message" cols="30" rows="10" placeholder="Message" style="font-family: Arial, Helvetica, sans-serif;" required></textarea></div>
+                <input type="submit" value="SUBMIT" id="submitButton">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

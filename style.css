@@ -1,0 +1,128 @@
+body {
+    margin: 0px;
+}
+
+/* EXTERNAL FONT FAMILIES */
+@font-face {
+    font-family: bebasNeue;
+    src: url(font/BebasNeue-Regular.woff);
+}
+@font-face {
+    font-family: montserrat;
+    src: url(font/MontserratSemiBold.ttf);
+}
+@font-face {
+    font-family: sourceSansPro;
+    src: url(font/SourceSansPro-Regular.ttf);
+}
+
+/* NAVIGATION BAR */
+.navContainer {
+    background-color: rgb(228, 131, 147); 
+    position: sticky; 
+    width: 100%; 
+    top: 0px;
+    z-index: 2;
+}
+#logo {
+    height: 40px; 
+    width: auto; 
+    float: left;
+}
+ul.navList {
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+}
+li.navItems{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+    z-index: 2; /* prevent from being covered */
+}
+.navContent {
+    margin: 60px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    font-size: 25px;
+    font-family: montserrat;
+}
+.navContainer a:hover{
+    color: #ffd1bd;
+}
+.linkContainer:hover{
+    border-bottom: 4px solid #ffd1bd;
+}
+.dropdown {
+    text-align: center;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #f1f1f1;
+}
+.dropdownContent {
+    display: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    font-size: 25px;
+    font-family: sourceSansPro;
+}
+.navItems:hover .dropdownContent {
+    display: block;
+}
+.navItems:hover .dropdown{
+    display: block;
+}
+.dropdown:hover{        /* For making sure dropdown won't close by small space in between */
+    display: block;
+}
+.dropdown:hover .dropdownContent{
+    display: block;
+}
+
+/* MAIN */
+.caption {
+    position: static;
+    font-family: montserrat; 
+    font-size: 30px; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 1%; 
+    margin-right: 1%; 
+    border-bottom: solid 2px rgb(143, 140, 140);
+    padding-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+    position: absolute; 
+    width: 100%; 
+    background-color: #424153;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.messageUsContainer {
+    float: right;
+    margin-right:40px ;
+}
+#messageHeader {
+    background: none; 
+    border: none; 
+    margin-left: 30px;
+}
+#messageUsForm {
+    line-height: 2; 
+}
+#submitButton {
+    margin-top: 10px; 
+    float: right;
+}
+button#messageHeader:hover h1{
+    color: #ffd1bd;
+}
+button#messageHeader:focus {
+    outline: none;
+}

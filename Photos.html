@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMIT Flag Football Club Homepage</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .albumContainer{
+            width: 96%;
+            margin: 40px auto;
+        }
+        .album{
+            width: 260px; 
+            display: inline-block; 
+            position: relative; 
+            margin-right: 40px;
+            margin-bottom: 30px;
+        }
+        .albumName{
+            text-align: center; 
+            font-family: sourceSansPro; 
+            font-size: 16px; 
+            background-color: rgb(221, 218, 218); 
+            padding: 15px; 
+            font-weight: 800;
+        }
+        .albumPhoto{
+            vertical-align: middle; 
+            width: 100%;
+        }
+        .layer1{
+            position: absolute; 
+            border: 1px solid grey; 
+            display: inline-block; 
+            width: 260px; 
+            height: 260px; 
+            left: -5px; 
+            top: -5px; 
+            z-index: -1; 
+            background-color: white;
+        }
+        .layer2{
+            position: absolute; 
+            border: 1px solid grey; 
+            display: inline-block; 
+            width: 260px; 
+            height: 260px; 
+            left: -10px; 
+            top: -10px; 
+            z-index: -2; 
+            background-color: white;
+        }
+        .albumLink {
+            text-decoration: none; 
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="navContainer">
+        <ul class="navList">
+            <li class="navItems" style="margin-right: 20px;">
+                <a href="Homepage.html" class="logo">
+                    <img src="images/logo.png" id="logo">
+                </a>
+            </li>
+            <li class="navItems">
+                <div class="linkContainer">
+                    <a href="Players.html" class="navContent">PLAYERS</a>
+                </div>
+            </li>
+            <li class="navItems" id="highlights">
+                <div class="linkContainer" style="border-bottom: 4px solid #ffd1bd;">
+                    <a href="javascript:void(0)" class="navContent">HIGHLIGHTS</a>
+                </div>
+                <div class="dropdown" id="highlightsDropDown">
+                    <a href="Photos.html" class="dropdownContent">Photos</a>
+                    <a href="Videos.html" class="dropdownContent">Videos</a>
+                </div>
+            </li>
+            <li class="navItems" id="social">
+                <div class="linkContainer">
+                    <a href="javascript:void(0)" class="navContent">SOCIAL</a>
+                </div>
+                <div class="dropdown" id="socialDropDown">
+                    <a href="https://www.facebook.com/RMITVNSGSFlagFootballClub/" target="_blank" class="dropdownContent">Facebook</a>
+                    <a href="https://www.instagram.com/rmitvnflagfootball/" target="_blank" class="dropdownContent">Instagram</a>
+                </div>
+            </li>
+            <li class="navItems">
+                <div class="linkContainer">
+                    <a href="About.html" class="navContent">ABOUT US</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- MAIN -->
+    <div style="margin-top: 30px;">
+        <div class="caption">INDOOR CHAMPIONSHIP 2019</div>
+        <div class="albumContainer">
+            <a class="albumLink" href="https://www.facebook.com/pg/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=3089169271110405" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/indoor1.jpg">
+                    <div class="albumName">
+                        <div>Final</div>
+                        <div>Rainbow Warriors vs Teddy Attack</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+
+            <a class="albumLink" href="https://www.facebook.com/pg/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=3089113867782612" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/indoor2.jpg">
+                    <div class="albumName">
+                        <div>3rd place</div>
+                        <div>Gravity vs Curry Boys</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+
+            <a class="albumLink" href="https://www.facebook.com/pg/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=3089082511119081">
+                <div class="album">
+                    <img class="albumPhoto" src="images/indoor3.jpg">
+                    <div class="albumName">
+                        <div>Semifinal 1</div>
+                        <div>Rainbow Warriors vs Curry Boys</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+
+            <a class="albumLink" href="https://www.facebook.com/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=3089095004451165" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/indoor4.jpg">
+                    <div class="albumName">
+                        <div>Semifinal 2</div>  
+                        <div>Gravity vs Teddy Attack</div> 
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="caption">EXTREME CUP 2019</div>
+        <div class="albumContainer">
+            <a class="albumLink" href="https://www.facebook.com/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=2970109713016362" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/extreme1.jpg">
+                    <div class="albumName">
+                        <div>Final</div>
+                        <div>Football 101 vs Southside T-Rex</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+
+            <a class="albumLink" href="https://www.facebook.com/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=2970095009684499" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/extreme2.jpg">
+                    <div class="albumName">
+                        <div>3rd place</div>
+                        <div>RMIT vs Teddy Attack</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+
+            <a class="albumLink" href="https://www.facebook.com/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=2970068163020517" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/extreme6.jpg">
+                    <div class="albumName">
+                        <div>Match 4</div>
+                        <div>Football 101 vs Teddy Attack</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+            
+            <a class="albumLink" href="https://www.facebook.com/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=2970034699690530" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/extreme5.jpg">
+                    <div class="albumName">
+                        <div>Match 3</div>
+                        <div>Southside T-Rex vs RMIT</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+            
+            <a class="albumLink" href="https://www.facebook.com/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=2970000239693976" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/extreme4.jpg">
+                    <div class="albumName">
+                        <div>Match 2</div>
+                        <div>Teddy Attack vs Southside T-Rex</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+
+            <a class="albumLink" href="https://www.facebook.com/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=2969952033032130" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/extreme3.jpg">
+                    <div class="albumName">
+                        <div>Match 1</div>
+                        <div>RMIT vs Football 101</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="caption">AUTUMN CUP 2019: THE INTERNATIONAL</div>
+        <div class="albumContainer">
+            <a class="albumLink" href="https://www.facebook.com/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=2723221641038505" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/autumn1.jpg">
+                    <div class="albumName">
+                        <div>Final</div>
+                        <div>BKK Droids vs Southside T-Rex</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+
+            <a class="albumLink" href="https://www.facebook.com/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=2723493487677987" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/autumn2.jpg">
+                    <div class="albumName">
+                        <div>3rd place</div>
+                        <div>Football 101 vs UP Guerillas</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+        </div>
+
+        <div class="caption">INTERNAL CUP 2019</div>
+        <div class="albumContainer">
+            <a class="albumLink" href="https://www.facebook.com/RMITVNSGSFlagFootballClub/photos/?tab=album&album_id=2583125508381453" target="_blank">
+                <div class="album">
+                    <img class="albumPhoto" src="images/internal1.jpg">
+                    <div class="albumName">
+                        <div>Final</div>
+                        <div>Southside T-Rex vs Football 101</div>
+                    </div>
+                    <div class="layer1"></div>
+                    <div class="layer2"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="messageUsContainer">
+            <button id="messageHeader" onclick="displayForm()"><h1 style="display: block; font-family: montserrat; font-weight: 700;">MESSAGE US</h1></button>
+            <form action="" id="messageUsForm" style="display: none;">
+                <div><input type="text" name="name" placeholder="Name" required></div>
+                <div><input type="email" name="email" placeholder="Email" required></div>
+                <div><input type="text" name="subject" placeholder="Subject" required></div>
+                <div><textarea name="message" id="message" cols="30" rows="10" placeholder="Message" style="font-family: Arial, Helvetica, sans-serif;" required></textarea></div>
+                <input type="submit" value="SUBMIT" id="submitButton">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
